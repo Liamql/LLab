@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_add_frag1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="ADD  Frag1" />
+
+        <Button
+            android:id="@+id/btn_add_frag2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="ADD  Frag2" />
+        <Button
+            android:id="@+id/btn_add_frag3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="ADD  Frag3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_hide_frag1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Hide F1" />
+        <Button
+            android:id="@+id/btn_show_frag1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Show F1" />
+        <Button
+            android:id="@+id/btn_hide_frag2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Hide F2" />
+        <Button
+            android:id="@+id/btn_show_frag2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Show F2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_detach_frag2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Detach F2" />
+        <Button
+            android:id="@+id/btn_attach_frag2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Attach F2" />
+        <Button
+            android:id="@+id/btn_detach_frag3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Detach F3" />
+        <Button
+            android:id="@+id/btn_attach_frag3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Attach F3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_remove_frag2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Remove  Fragment2" />
+
+        <Button
+            android:id="@+id/btn_replace_frag1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="replace  Fragment1" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

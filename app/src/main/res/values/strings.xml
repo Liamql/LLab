@@ -2,7 +2,7 @@
     <string name="app_name">LLab</string>
     <!-- 左侧菜单 -->
     <string name="left_menu_home">首页</string>
-    <string name="left_menu_animator">动画篇</string>
+    <string name="left_menu_fragment">fragment</string>
     <string name="left_menu_custom_view">自定义View</string>
     <string name="left_menu_refresh">下拉刷新</string>
     <string name="left_status_bar">沉浸式状态栏</string>
