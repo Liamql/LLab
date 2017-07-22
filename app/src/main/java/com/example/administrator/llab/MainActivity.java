@@ -14,6 +14,8 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.administrator.llab.fragment.fragmentBase.FragmentTest;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -105,11 +107,11 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment;
         switch (position) {
             case 2:
-                fragment = new FragmentTest();
+                fragment = new FragmentLab();
                 break;
             default:
                 //fragment = new HomeFragment();
-                fragment = new FragmentTest();
+                fragment = new FragmentLab();
                 break;
         }
         return fragment;

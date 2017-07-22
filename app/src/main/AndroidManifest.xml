@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".fragment.fragmentData.FragmentData"></activity>
+        <activity android:name=".fragment.fragmentBase.FragmentTest"></activity>
+        <activity android:name=".fragment.fragmentData.FDSame"></activity>
+        <activity android:name=".fragment.fragmentData.FDiff"></activity>
     </application>
 
 </manifest>

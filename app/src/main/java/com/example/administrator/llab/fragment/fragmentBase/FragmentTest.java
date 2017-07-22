@@ -1,10 +1,12 @@
-package com.example.administrator.llab;
+package com.example.administrator.llab.fragment.fragmentBase;
 
 
-import android.app.FragmentManager;
+import android.app.Activity;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,15 +14,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.administrator.llab.fragment.Fragment1;
-import com.example.administrator.llab.fragment.Fragment2;
-import com.example.administrator.llab.fragment.Fragment3;
+import com.example.administrator.llab.R;
+import com.example.administrator.llab.fragment.fragmentBase.Fragment1;
+import com.example.administrator.llab.fragment.fragmentBase.Fragment2;
+import com.example.administrator.llab.fragment.fragmentBase.Fragment3;
 
 
 /**
  * Created by Administrator on 2017/7/21 0021.
  */
-public class FragmentTest extends Fragment implements View.OnClickListener{
+public class FragmentTest extends FragmentActivity implements View.OnClickListener{
 
     private Button addF1;
     private Button addF2;
@@ -36,31 +39,29 @@ public class FragmentTest extends Fragment implements View.OnClickListener{
     private Button rmF2;
     private Button rpF1;
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        View rootview = inflater.inflate(R.layout.fragment_main,container,false);
-        initView(rootview);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_main);
+        initView();
         initListener();
-        return rootview;
     }
 
-    void initView(View view)
+    void initView()
     {
-        addF1 = (Button) view.findViewById(R.id.btn_add_frag1);
-        addF2 = (Button) view.findViewById(R.id.btn_add_frag2);
-        addF3 = (Button) view.findViewById(R.id.btn_add_frag3);
-        hideF1 = (Button) view.findViewById(R.id.btn_hide_frag1);
-        hideF2 = (Button) view.findViewById(R.id.btn_hide_frag2);
-        showF1 = (Button) view.findViewById(R.id.btn_show_frag1);
-        showF2 = (Button) view.findViewById(R.id.btn_show_frag2);
-        atF2 = (Button) view.findViewById(R.id.btn_attach_frag2);
-        atF3 = (Button) view.findViewById(R.id.btn_attach_frag3);
-        deF2 = (Button) view.findViewById(R.id.btn_detach_frag2);
-        deF3 = (Button) view.findViewById(R.id.btn_detach_frag3);
-        rmF2 = (Button) view.findViewById(R.id.btn_remove_frag2);
-        rpF1 = (Button) view.findViewById(R.id.btn_replace_frag1);
+        addF1 = (Button) findViewById(R.id.btn_add_frag1);
+        addF2 = (Button) findViewById(R.id.btn_add_frag2);
+        addF3 = (Button) findViewById(R.id.btn_add_frag3);
+        hideF1 = (Button) findViewById(R.id.btn_hide_frag1);
+        hideF2 = (Button) findViewById(R.id.btn_hide_frag2);
+        showF1 = (Button) findViewById(R.id.btn_show_frag1);
+        showF2 = (Button) findViewById(R.id.btn_show_frag2);
+        atF2 = (Button) findViewById(R.id.btn_attach_frag2);
+        atF3 = (Button) findViewById(R.id.btn_attach_frag3);
+        deF2 = (Button) findViewById(R.id.btn_detach_frag2);
+        deF3 = (Button) findViewById(R.id.btn_detach_frag3);
+        rmF2 = (Button) findViewById(R.id.btn_remove_frag2);
+        rpF1 = (Button) findViewById(R.id.btn_replace_frag1);
     }
 
     void initListener()
@@ -86,8 +87,7 @@ public class FragmentTest extends Fragment implements View.OnClickListener{
         {
             case R.id.btn_add_frag1:
                 Fragment1 fragment1 = new Fragment1();
-                addFragment(fragment1,"fragment1");
-                Toast.makeText(getContext(),"addF1",Toast.LENGTH_SHORT).show();
+                addFragment(fragment1, "fragment1");
                 break;
             case R.id.btn_add_frag2:
                 Fragment2 fragment2 = new Fragment2();
@@ -107,7 +107,6 @@ public class FragmentTest extends Fragment implements View.OnClickListener{
                 attachF("fragment2");
                 break;
             case R.id.btn_attach_frag3:
-                Fragment3 f3 = new Fragment3();
                 attachF("fragment3");
                 break;
             case R.id.btn_detach_frag2:
@@ -135,48 +134,48 @@ public class FragmentTest extends Fragment implements View.OnClickListener{
 
     void addFragment(Fragment fragment,String tag)
     {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.fragment_container,fragment,tag);
         transaction.commit();
     }
 
     private void removeFragment2() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.remove(getFragmentManager().findFragmentByTag("fragment2"));
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.remove(getSupportFragmentManager().findFragmentByTag("fragment2"));
         transaction.commit();
     }
 
     private void replaceFragment1(Fragment fragment,String tag) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment, tag);
         transaction.commit();
     }
 
     private void detachF(String tag)
     {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.detach(getFragmentManager().findFragmentByTag(tag));
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.detach(getSupportFragmentManager().findFragmentByTag(tag));
         transaction.commit();
     }
 
     private void attachF(String tag)
     {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.attach(getFragmentManager().findFragmentByTag(tag));
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.attach(getSupportFragmentManager().findFragmentByTag(tag));
         transaction.commit();
     }
 
     private void hideF(String tag)
     {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.hide(getFragmentManager().findFragmentByTag(tag));
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.hide(getSupportFragmentManager().findFragmentByTag(tag));
         transaction.commit();
     }
 
     private void showF(String tag)
     {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.show(getFragmentManager().findFragmentByTag(tag));
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.show(getSupportFragmentManager().findFragmentByTag(tag));
         transaction.commit();
     }
 }
