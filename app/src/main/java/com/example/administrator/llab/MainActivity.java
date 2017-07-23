@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
                         controlShowFragment(1);
                         toolbar.setTitle(R.string.left_menu_fragment);
                         break;
+                    case R.id.left_menu_anno:
+                        controlShowFragment(2);
+                        toolbar.setTitle(R.string.left_menu_anno);
+                        break;
                     default:
                         controlShowFragment(0);
                         toolbar.setTitle(R.string.app_name);
@@ -106,12 +110,15 @@ public class MainActivity extends AppCompatActivity {
     private Fragment getLeftFragment(int position) {
         Fragment fragment;
         switch (position) {
-            case 2:
+            case 1:
                 fragment = new FragmentLab();
+                break;
+            case 2:
+                fragment = new AnnoLab();
                 break;
             default:
                 //fragment = new HomeFragment();
-                fragment = new FragmentLab();
+                fragment = new AnnoLab();
                 break;
         }
         return fragment;

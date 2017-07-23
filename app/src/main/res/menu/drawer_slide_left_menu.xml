@@ -14,6 +14,11 @@
             android:title="@string/left_menu_fragment"/>
 
         <item
+            android:id="@+id/left_menu_anno"
+            android:checked="false"
+            android:title="@string/left_menu_anno"/>
+
+        <item
             android:id="@+id/left_menu_custom_view"
             android:checked="false"
             android:title="@string/left_menu_custom_view"/>

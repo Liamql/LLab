@@ -19,6 +19,8 @@
         <activity android:name=".fragment.fragmentBase.FragmentTest"></activity>
         <activity android:name=".fragment.fragmentData.FDSame"></activity>
         <activity android:name=".fragment.fragmentData.FDiff"></activity>
+        <activity android:name=".annotation.anno_RT"></activity>
+        <activity android:name=".annotation.anno_bknife"></activity>
     </application>
 
 </manifest>
