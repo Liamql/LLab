@@ -3,4 +3,66 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#ff5555</color>
+    <color name="pink">#e91e63</color>
+    <color name="purple">#ba68c8</color>
+    <color name="indigo">#3f51b5</color>
+
+    <color name="blue">#4285F4</color>
+    <color name="cyan">#00bcd4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#7eb63d</color>
+
+    <color name="orange">#ff9800</color>
+    <color name="yellow">#ffeb3b</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#607d8b</color>
+
+    <!-- common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg">#f8f8f8</color>
+
+    <!-- material design black font color -->
+    <color name="font_black_0">#212121</color>
+    <color name="font_black_1">#424242</color>
+    <color name="font_black_2">#616161</color>
+    <color name="font_black_3">#757575</color>
+    <color name="font_black_4">#9e9e9e</color>
+    <color name="font_black_5">#bdbdbd</color>
+    <color name="font_black_6">#e0e0e0</color>
+
+    <!-- divider -->
+    <color name="divider_0">#bdbdbd</color>
+    <color name="divider_1">#e2e2e2</color>
+    <color name="divider_2">#e6e6e6</color>
+
+    <color name="c_kitchen_detail_tag_back_sel">#f5bd11</color>
+    <color name="c_kitchen_detail_line_top">#fcfcfc</color>
+    <color name="c_kitchen_detail_send_font">#d5d5d5</color>
+    <color name="c_kitchen_detail_line">#e4e4e4</color>
+    <color name="c_kitchen_detail_little_table_line">#eeeeee</color>
+    <color name="c_home_city_font">#f27242</color>
+
+    <color name="c_translate_82">#4f2e2222</color>
+    <color name="c_translate_white_80">#ccffffff</color>
+    <color name="c_translate_white_70">#b3ffffff</color>
+    <color name="c_translate_white_50">#80ffffff</color>
+    <color name="c_translate_orange_20">#14f27242</color>
+    <color name="half_transparent">#4f000000</color>
+    <color name="c_translate_black_35">#59000000</color>
+
+    <color name="google_red">#EA4335</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#34A853</color>
+    <integer-array name="google_glyph_colors">
+        <item>@android:color/white</item>
+        <item>@color/google_red</item>
+        <item>@color/google_yellow</item>
+        <item>@color/google_blue</item>
+        <item>@color/google_green</item>
+    </integer-array>
 </resources>

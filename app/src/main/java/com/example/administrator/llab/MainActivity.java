@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         drawerToggle.syncState();
+        controlShowFragment(0);
     }
 
     //显示home图标
@@ -117,8 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 fragment = new AnnoLab();
                 break;
             default:
-                //fragment = new HomeFragment();
-                fragment = new AnnoLab();
+                fragment = new FragmentHome();
                 break;
         }
         return fragment;

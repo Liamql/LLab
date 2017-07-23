@@ -21,6 +21,9 @@
         <activity android:name=".fragment.fragmentData.FDiff"></activity>
         <activity android:name=".annotation.anno_RT"></activity>
         <activity android:name=".annotation.anno_bknife"></activity>
+        <activity android:name=".reflection.ref_base"></activity>
+        <activity android:name=".Thread.ThreadActitvity"></activity>
+        <activity android:name=".Thread.ThreadPoolActivity"></activity>
     </application>
 
 </manifest>
