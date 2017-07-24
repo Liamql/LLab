@@ -16,6 +16,8 @@ import com.example.administrator.llab.Thread.ThreadActitvity;
 import com.example.administrator.llab.Thread.ThreadPoolActivity;
 import com.example.administrator.llab.annotation.anno_RT;
 import com.example.administrator.llab.reflection.ref_base;
+import com.example.administrator.llab.service.AIDLSimpleActivity;
+import com.example.administrator.llab.service.ServiceBasicActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -86,6 +88,18 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.tv_thread_pool) void toTP()
     {
         Intent intent = new Intent(getContext(), ThreadPoolActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_service) void toSer()
+    {
+        Intent intent = new Intent(getContext(), ServiceBasicActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_aidl) void toAI()
+    {
+        Intent intent = new Intent(getContext(), AIDLSimpleActivity.class);
         startActivity(intent);
     }
 }

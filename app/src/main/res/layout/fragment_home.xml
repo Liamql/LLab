@@ -27,8 +27,135 @@
 
             <TextView
                 style="@style/StyleUIMainTitleTV"
+                android:text="线程、注解、反射"
+                android:textColor="@color/purple"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_ui_main_item_height"
+                android:layout_marginBottom="@dimen/dimen_ui_main_item_margin_top"
+                android:layout_marginLeft="@dimen/dimen_ui_main_item_margin"
+                android:layout_marginRight="@dimen/dimen_ui_main_item_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_multi_thread"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_multi_thread"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="多线程"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimen_ui_main_item_half_child_margin"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
+                            android:layout_weight="1"
+                            android:background="@color/purple"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_thread"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="线程"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
+                            android:layout_weight="1"
+                            android:background="@color/purple"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_reflection"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="反射"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dimen_ui_main_item_half_child_margin"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
+                            android:layout_weight="1"
+                            android:background="@color/purple"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_thread_pool"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="线程池"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
+                            android:layout_weight="1"
+                            android:background="@color/purple"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_annotation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="注解"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/StyleUIMainTitleTV"
                 android:layout_marginTop="@dimen/dimen_ui_main_item_margin_top"
-                android:text="动画"
+                android:text="Service、remote、AIDI"
                 android:textColor="@color/grey"/>
 
             <LinearLayout
@@ -56,7 +183,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="属性动画"
+                        android:text="Service"
                         android:textColor="@color/white"/>
                 </LinearLayout>
 
@@ -82,11 +209,11 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_Bezier"
+                                android:id="@+id/tv_service"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="贝赛尔动画"
+                                android:text="Service基础"
                                 android:textColor="@color/white"/>
                         </LinearLayout>
 
@@ -97,6 +224,13 @@
                             android:layout_weight="1"
                             android:background="@color/grey"
                             android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_aidl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="AIDL"
+                                android:textColor="@color/white"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -447,8 +581,9 @@
 
             <TextView
                 style="@style/StyleUIMainTitleTV"
-                android:text="线程、注解、反射"
-                android:textColor="@color/purple"/>
+                android:layout_marginTop="@dimen/dimen_ui_main_item_margin_top"
+                android:text="动画"
+                android:textColor="@color/grey"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -459,24 +594,23 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/ll_multi_thread"
                     android:layout_width="match_parent"
-                    android:layout_weight="2"
                     android:layout_height="match_parent"
-                    android:background="@color/purple"
+                    android:layout_weight="2"
+                    android:background="@color/grey"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_multi_thread"/>
+                        android:src="@drawable/ic_content_send"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="多线程"
+                        android:text="属性动画"
                         android:textColor="@color/white"/>
                 </LinearLayout>
 
@@ -498,15 +632,15 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
                             android:layout_weight="1"
-                            android:background="@color/purple"
+                            android:background="@color/grey"
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_thread"
+                                android:id="@+id/tv_Bezier"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="线程"
+                                android:text="贝赛尔动画"
                                 android:textColor="@color/white"/>
                         </LinearLayout>
 
@@ -515,16 +649,8 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
                             android:layout_weight="1"
-                            android:background="@color/purple"
+                            android:background="@color/grey"
                             android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_reflection"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="反射"
-                                android:textColor="@color/white"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -540,16 +666,8 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
                             android:layout_weight="1"
-                            android:background="@color/purple"
+                            android:background="@color/grey"
                             android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_thread_pool"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="线程池"
-                                android:textColor="@color/white"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -557,20 +675,13 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/dimen_ui_main_item_child_margin"
                             android:layout_weight="1"
-                            android:background="@color/purple"
+                            android:background="@color/grey"
                             android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_annotation"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="注解"
-                                android:textColor="@color/white"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
 
             <TextView
                 style="@style/StyleUIMainTitleTV"
