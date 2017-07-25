@@ -27,9 +27,12 @@
         <activity android:name=".service.ServiceBasicActivity"></activity>
         <activity android:name=".service.AIDLSimpleActivity"></activity>
         <activity android:name=".IPC.handlerBasic"></activity>
+        <activity android:name=".broadcast.BasicBroadcastActivity"></activity>
+        <activity android:name=".view.ShapeViewActivity"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>
+        <service android:name=".broadcast.UpdateGService"></service>
         <service android:name=".service.SimpleRemoteService"
             android:process=":remote"></service>
         <service android:name=".service.SimpleAIDL"

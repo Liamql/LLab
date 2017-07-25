@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
                         controlShowFragment(1);
                         toolbar.setTitle(R.string.left_menu_fragment);
                         break;
-                    case R.id.left_menu_anno:
+                    case R.id.left_menu_broadcast:
                         controlShowFragment(2);
-                        toolbar.setTitle(R.string.left_menu_anno);
+                        toolbar.setTitle(R.string.left_menu_broadcast);
                         break;
                     default:
                         controlShowFragment(0);

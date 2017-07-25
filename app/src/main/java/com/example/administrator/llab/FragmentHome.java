@@ -16,9 +16,11 @@ import com.example.administrator.llab.R;
 import com.example.administrator.llab.Thread.ThreadActitvity;
 import com.example.administrator.llab.Thread.ThreadPoolActivity;
 import com.example.administrator.llab.annotation.anno_RT;
+import com.example.administrator.llab.broadcast.BasicBroadcastActivity;
 import com.example.administrator.llab.reflection.ref_base;
 import com.example.administrator.llab.service.AIDLSimpleActivity;
 import com.example.administrator.llab.service.ServiceBasicActivity;
+import com.example.administrator.llab.view.ShapeViewActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -107,6 +109,18 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.ll_handler) void toPo()
     {
         Intent intent = new Intent(getContext(), handlerBasic.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.ll_broadcast) void toBr()
+    {
+        Intent intent = new Intent(getContext(), BasicBroadcastActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.ll_shape_view) void toSh()
+    {
+        Intent intent = new Intent(getContext(), ShapeViewActivity.class);
         startActivity(intent);
     }
 

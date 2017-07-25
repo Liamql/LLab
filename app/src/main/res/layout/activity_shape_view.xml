@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <include layout="@layout/app_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <com.example.administrator.llab.view.ShapeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:viewColor="@color/red"
+                    app:viewHeight="50dp"
+                    app:viewShape="oval"
+                    app:viewWidth="50dp"/>
+
+                <com.example.administrator.llab.view.ShapeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:viewColor="@color/orange"
+                    app:viewHeight="30dp"
+                    app:viewShape="oval"
+                    app:viewWidth="50dp"/>
+
+                <com.example.administrator.llab.view.ShapeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:viewColor="@color/green"
+                    app:viewHeight="50dp"
+                    app:viewShape="rect"
+                    app:viewWidth="50dp"/>
+
+                <com.example.administrator.llab.view.ShapeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:viewColor="@color/purple"
+                    app:viewHeight="30dp"
+                    app:viewShape="rect"
+                    app:viewWidth="50dp"/>
+            </LinearLayout>
+
+            <com.example.administrator.llab.view.DashedView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="15dp"
+                app:dashColor="@color/red"
+                app:dashGap="5dp"
+                app:dashWidth="5dp"/>
+
+            <com.example.administrator.llab.view.DashedView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="15dp"
+                app:dashColor="@color/red"
+                app:dashGap="5dp"
+                app:dashWidth="5dp"/>
+
+            <com.example.administrator.llab.view.DashedView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="15dp"
+                app:dashColor="@color/red"
+                app:dashGap="15dp"
+                app:dashWidth="5dp"/>
+
+            <com.example.administrator.llab.view.DashedView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="15dp"
+                app:dashColor="@color/red"
+                app:dashGap="5dp"
+                app:dashWidth="15dp"/>
+
+            <com.example.administrator.llab.view.DashedView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="15dp"
+                app:dashColor="@color/red"
+                app:dashGap="5dp"
+                app:dashWidth="10dp"/>
+
+            <com.example.administrator.llab.view.DashedView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="15dp"
+                app:dashColor="@color/red"
+                app:dashGap="15dp"
+                app:dashWidth="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/xml_dash_line"
+                android:layerType="software"/>
+
+            <com.example.administrator.llab.view.ShapeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layerType="software"
+                app:lineDashGap="3dp"
+                app:lineDashWidth="6dp"
+                app:lineWidth="1dp"
+                app:viewColor="@color/orange"
+                app:viewHeight="10dp"
+                app:viewShape="line"
+                app:viewWidth="200dp"/>
+
+            <com.example.administrator.llab.view.ShapeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layerType="software"
+                app:lineDashGap="3dp"
+                app:lineDashWidth="3dp"
+                app:lineWidth="3dp"
+                app:viewColor="@color/orange"
+                app:viewHeight="10dp"
+                app:viewShape="line"
+                app:viewWidth="200dp"/>
+
+            <com.example.administrator.llab.view.ShapeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layerType="software"
+                app:lineDashGap="3dp"
+                app:lineDashWidth="10dp"
+                app:lineWidth="1dp"
+                app:viewColor="@color/orange"
+                app:viewHeight="10dp"
+                app:viewShape="line"
+                app:viewWidth="200dp"/>
+
+            <com.example.administrator.llab.view.ShapeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layerType="software"
+                app:lineDashGap="6dp"
+                app:lineDashWidth="6dp"
+                app:lineWidth="1dp"
+                app:viewColor="@color/orange"
+                app:viewHeight="10dp"
+                app:viewShape="line"
+                app:viewWidth="200dp"/>
+
+            <com.example.administrator.llab.view.ShapeView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layerType="software"
+                app:lineDashGap="0dp"
+                app:lineDashWidth="6dp"
+                app:lineWidth="1dp"
+                app:viewColor="@color/orange"
+                app:viewHeight="10dp"
+                app:viewShape="line"
+                app:viewWidth="200dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
