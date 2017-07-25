@@ -26,6 +26,7 @@
         <activity android:name=".Thread.ThreadPoolActivity"></activity>
         <activity android:name=".service.ServiceBasicActivity"></activity>
         <activity android:name=".service.AIDLSimpleActivity"></activity>
+        <activity android:name=".IPC.handlerBasic"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>
@@ -35,6 +36,19 @@
             android:process=":remote">
             <intent-filter>
                 <action android:name="android.intent.action.SimpleAIDL"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
+        <service android:name=".service.IPCnoAIDL"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.IPCnoAIDL"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
+        <service android:name=".IPC.MessengerService">
+            <intent-filter>
+                <action android:name="android.intent.action.MsgService"></action>
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </service>

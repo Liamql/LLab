@@ -6,7 +6,9 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
 
-import com.example.administrator.llab.AIDL.ICount;
+import MyAIDL.ICount;
+
+//import com.example.administrator.llab.AIDL.ICount;
 
 /**
  * Created by Administrator on 2017/7/24 0024.

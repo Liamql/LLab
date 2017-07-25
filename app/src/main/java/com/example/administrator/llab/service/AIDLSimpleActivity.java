@@ -21,6 +21,11 @@ public class AIDLSimpleActivity extends AppCompatActivity {
     @BindView(R.id.stop_service)
     Button spbtn;
 
+    @BindView(R.id.bind_service)
+    Button bsbtn;
+    @BindView(R.id.unbind_service)
+    Button ubbtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,4 +43,18 @@ public class AIDLSimpleActivity extends AppCompatActivity {
         Intent intent = new Intent(this,SimpleAIDL.class);
         stopService(intent);
     }
+
+    @OnClick(R.id.bind_service) void bs()
+    {
+        Intent intent = new Intent(this,IPCnoAIDL.class);
+        startService(intent);
+    }
+
+    @OnClick(R.id.unbind_service) void ubs()
+    {
+        Intent intent = new Intent(this,IPCnoAIDL.class);
+        stopService(intent);
+    }
+
+
 }

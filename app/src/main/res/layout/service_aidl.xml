@@ -25,13 +25,13 @@
             android:id="@+id/bind_service"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="Bind Service" />
+            android:text="Start noAIDL" />
 
         <Button
             android:id="@+id/unbind_service"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="Unbind Service"
+            android:text="Stop noAIDL"
             />
     </LinearLayout>
 

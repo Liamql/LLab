@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.administrator.llab.FragmentLab;
+import com.example.administrator.llab.IPC.handlerBasic;
 import com.example.administrator.llab.R;
 import com.example.administrator.llab.Thread.ThreadActitvity;
 import com.example.administrator.llab.Thread.ThreadPoolActivity;
@@ -102,4 +103,11 @@ public class FragmentHome extends Fragment {
         Intent intent = new Intent(getContext(), AIDLSimpleActivity.class);
         startActivity(intent);
     }
+
+    @OnClick(R.id.ll_handler) void toPo()
+    {
+        Intent intent = new Intent(getContext(), handlerBasic.class);
+        startActivity(intent);
+    }
+
 }
