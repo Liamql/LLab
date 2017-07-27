@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.llab">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,6 +31,9 @@
         <activity android:name=".IPC.handlerBasic"></activity>
         <activity android:name=".broadcast.BasicBroadcastActivity"></activity>
         <activity android:name=".view.ShapeViewActivity"></activity>
+        <activity android:name=".IPC.SimpleAsyncTask"></activity>
+        <activity android:name=".Network.SimpleHttpActivity"></activity>
+        <activity android:name=".Network.OkHttp3BasicActivity"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>
@@ -56,5 +61,6 @@
             </intent-filter>
         </service>
     </application>
+
 
 </manifest>

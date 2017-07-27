@@ -34,7 +34,7 @@ public class SimpleAsyncTask extends Activity {
 
     void downloadImage()
     {
-        
+
     }
 
     private class MyAsyncTask extends AsyncTask

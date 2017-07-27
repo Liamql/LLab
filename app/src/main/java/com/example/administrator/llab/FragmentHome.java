@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.example.administrator.llab.FragmentLab;
 import com.example.administrator.llab.IPC.handlerBasic;
+import com.example.administrator.llab.Network.OkHttp3BasicActivity;
+import com.example.administrator.llab.Network.SimpleHttpActivity;
 import com.example.administrator.llab.R;
 import com.example.administrator.llab.Thread.ThreadActitvity;
 import com.example.administrator.llab.Thread.ThreadPoolActivity;
@@ -121,6 +123,18 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.ll_shape_view) void toSh()
     {
         Intent intent = new Intent(getContext(), ShapeViewActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_http_url) void toHT()
+    {
+        Intent intent = new Intent(getContext(), SimpleHttpActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.ll_okhttp) void toOK()
+    {
+        Intent intent = new Intent(getContext(), OkHttp3BasicActivity.class);
         startActivity(intent);
     }
 
