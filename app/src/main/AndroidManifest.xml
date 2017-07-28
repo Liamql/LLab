@@ -34,6 +34,7 @@
         <activity android:name=".IPC.SimpleAsyncTask"></activity>
         <activity android:name=".Network.SimpleHttpActivity"></activity>
         <activity android:name=".Network.OkHttp3BasicActivity"></activity>
+        <activity android:name=".Network.Retrofit2BasicActivity"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>

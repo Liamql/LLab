@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.administrator.llab.FragmentLab;
 import com.example.administrator.llab.IPC.handlerBasic;
 import com.example.administrator.llab.Network.OkHttp3BasicActivity;
+import com.example.administrator.llab.Network.Retrofit2BasicActivity;
 import com.example.administrator.llab.Network.SimpleHttpActivity;
 import com.example.administrator.llab.R;
 import com.example.administrator.llab.Thread.ThreadActitvity;
@@ -135,6 +136,12 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.ll_okhttp) void toOK()
     {
         Intent intent = new Intent(getContext(), OkHttp3BasicActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_retrofit) void toRF()
+    {
+        Intent intent = new Intent(getContext(), Retrofit2BasicActivity.class);
         startActivity(intent);
     }
 

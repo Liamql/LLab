@@ -124,6 +124,16 @@ public class MainActivity extends AppCompatActivity {
         return fragment;
     }
 
+    private Fragment getRightFragment(int position) {
+        Fragment fragment;
+        switch (position) {
+            default:
+                fragment = new FragmentHome();
+                break;
+        }
+        return fragment;
+    }
+
     private String makeTag(int position) {
         return R.id.fl_container + "_" + position;
     }
@@ -145,9 +155,9 @@ public class MainActivity extends AppCompatActivity {
             if (mainDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
                 fragmentTransaction.add(R.id.fl_container, getLeftFragment(position), makeTag(position));
             } else if (mainDrawerLayout.isDrawerOpen(Gravity.RIGHT)) {
-                //fragmentTransaction.add(R.id.fl_container, getRightFragment(position), makeTag(position));
+                fragmentTransaction.add(R.id.fl_container, getRightFragment(position), makeTag(position));
             } else {
-                //fragmentTransaction.add(R.id.fl_container, getRightFragment(0), makeTag(position));
+                fragmentTransaction.add(R.id.fl_container, getRightFragment(0), makeTag(position));
             }
         }
         fragmentTransaction.commitAllowingStateLoss();
