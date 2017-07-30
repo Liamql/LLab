@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.administrator.llab.Dagger2.DaggerActivity;
 import com.example.administrator.llab.FragmentLab;
 import com.example.administrator.llab.IPC.handlerBasic;
 import com.example.administrator.llab.Network.OkHttp3BasicActivity;
@@ -142,6 +143,12 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.tv_retrofit) void toRF()
     {
         Intent intent = new Intent(getContext(), Retrofit2BasicActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_dagger) void toDA()
+    {
+        Intent intent = new Intent(getContext(), DaggerActivity.class);
         startActivity(intent);
     }
 

@@ -438,6 +438,13 @@
                             android:layout_weight="1"
                             android:background="@color/brown"
                             android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_dagger"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Dagger2"
+                                android:textColor="@color/white"/>
                         </LinearLayout>
                     </LinearLayout>
 
