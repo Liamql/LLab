@@ -14,8 +14,6 @@ import android.widget.TextView;
 import com.example.administrator.llab.Network.retrofit.City;
 import com.example.administrator.llab.R;
 import com.google.gson.Gson;
-import com.squareup.okhttp.MediaType;
-import com.squareup.okhttp.RequestBody;
 
 import java.io.BufferedReader;
 import java.io.IOException;

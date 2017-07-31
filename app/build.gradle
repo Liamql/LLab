@@ -32,14 +32,15 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.1.0'
 
     //okhttp3
+
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
 
     //Gson
     compile 'com.google.code.gson:gson:2.8.0'
 
     //retrofit2.0
-    compile 'com.squareup.retrofit:retrofit:2.0.0-beta1'
-    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     //dagger2
     compile 'com.google.dagger:dagger:2.4'

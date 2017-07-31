@@ -14,9 +14,6 @@ import com.example.administrator.llab.Network.retrofit.City;
 import com.example.administrator.llab.Network.retrofit.IWeather;
 import com.example.administrator.llab.R;
 import com.google.gson.Gson;
-import com.squareup.okhttp.Interceptor;
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,11 +21,14 @@ import java.io.InputStream;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.GsonConverterFactory;
-import retrofit.Response;
-import retrofit.Retrofit;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by Administrator on 2017/7/27 0027.
@@ -81,7 +81,7 @@ public class Retrofit2BasicActivity extends Activity {
     private class RequestInterceptor implements Interceptor
     {
         @Override
-        public com.squareup.okhttp.Response intercept(Chain chain) throws IOException {
+        public Response intercept(Chain chain) throws IOException {
             Request request = chain.request()
                     .newBuilder()
                     .addHeader("apikey",API_KEY)
@@ -106,13 +106,12 @@ public class Retrofit2BasicActivity extends Activity {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(httpurl)
                 .addConverterFactory(GsonConverterFactory.create())
-                .client(getOkHttpClient())
                 .build();
         IWeather iWeather = retrofit.create(IWeather.class);
         Call<City> call = iWeather.getCity(API_KEY, "shenzhen");
         call.enqueue(new Callback<City>() {
             @Override
-            public void onResponse(Response<City> response) {
+            public void onResponse(Call<City> call, retrofit2.Response<City> response) {
                 Message msg = Message.obtain();
                 msg.what = 1;
                 msg.obj = response.body().toString();
@@ -120,7 +119,7 @@ public class Retrofit2BasicActivity extends Activity {
             }
 
             @Override
-            public void onFailure(Throwable t) {
+            public void onFailure(Call<City> call, Throwable t) {
 
             }
         });
@@ -170,13 +169,12 @@ public class Retrofit2BasicActivity extends Activity {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(httpurl)
                 .addConverterFactory(GsonConverterFactory.create())
-                .client(new OkHttpClient())
                 .build();
         IWeather iWeather = retrofit.create(IWeather.class);
         Call<City> call = iWeather.getCity(S_KEY,"shenzhen");
         call.enqueue(new Callback<City>() {
             @Override
-            public void onResponse(Response<City> response) {
+            public void onResponse(Call<City> call, retrofit2.Response<City> response) {
                 Message msg = Message.obtain();
                 msg.what = 1;
                 msg.obj = response.body().toString();
@@ -184,7 +182,7 @@ public class Retrofit2BasicActivity extends Activity {
             }
 
             @Override
-            public void onFailure(Throwable t) {
+            public void onFailure(Call<City> call, Throwable t) {
 
             }
         });

@@ -1,9 +1,9 @@
 package com.example.administrator.llab.Network.retrofit;
 
-import retrofit.Call;
-import retrofit.http.GET;
-import retrofit.http.Path;
-import retrofit.http.Query;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 /**
  * Created by Administrator on 2017/7/28 0028.
