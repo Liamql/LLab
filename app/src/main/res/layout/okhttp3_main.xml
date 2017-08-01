@@ -40,6 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sn_tv"
+        android:singleLine="false"
+        android:maxLines="50"
+        android:scrollbars="vertical"
         android:text="null"/>
 
     <ImageView

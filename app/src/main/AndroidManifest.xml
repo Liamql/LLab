@@ -36,6 +36,7 @@
         <activity android:name=".Network.OkHttp3BasicActivity"></activity>
         <activity android:name=".Network.Retrofit2BasicActivity"></activity>
         <activity android:name=".Dagger2.DaggerActivity"></activity>
+        <activity android:name=".Network.JsoupBasicActivity"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>

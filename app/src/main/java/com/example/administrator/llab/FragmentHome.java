@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.administrator.llab.Dagger2.DaggerActivity;
 import com.example.administrator.llab.FragmentLab;
 import com.example.administrator.llab.IPC.handlerBasic;
+import com.example.administrator.llab.Network.JsoupBasicActivity;
 import com.example.administrator.llab.Network.OkHttp3BasicActivity;
 import com.example.administrator.llab.Network.Retrofit2BasicActivity;
 import com.example.administrator.llab.Network.SimpleHttpActivity;
@@ -149,6 +150,12 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.tv_dagger) void toDA()
     {
         Intent intent = new Intent(getContext(), DaggerActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_jsoup) void toJP()
+    {
+        Intent intent = new Intent(getContext(), JsoupBasicActivity.class);
         startActivity(intent);
     }
 

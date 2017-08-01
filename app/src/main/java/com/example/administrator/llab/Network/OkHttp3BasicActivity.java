@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -81,6 +82,8 @@ public class OkHttp3BasicActivity extends Activity {
 
         ButterKnife.bind(this);
 
+        tv.setMovementMethod(ScrollingMovementMethod.getInstance());
+
     }
 
     /**
@@ -122,7 +125,7 @@ public class OkHttp3BasicActivity extends Activity {
         client = new OkHttpClient();
 
         Request request = new Request.Builder()
-                .url("http://www.baidu.com")
+                .url("https://www.zhihu.com/collection/31241928")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {

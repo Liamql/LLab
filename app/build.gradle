@@ -47,4 +47,7 @@ dependencies {
     apt 'com.google.dagger:dagger-compiler:2.4'
     //java注解
     compile 'org.glassfish:javax.annotation:10.0-b28'
+
+    //Jsoup
+    compile 'org.jsoup:jsoup:1.9.2'
 }
