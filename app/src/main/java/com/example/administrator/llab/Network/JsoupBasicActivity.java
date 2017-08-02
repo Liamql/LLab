@@ -85,8 +85,9 @@ public class JsoupBasicActivity extends AppCompatActivity{
                         Log.e("J",title.text());
                         Elements zm_item_answer = zmItemDoc.select("div.zm-item-answer");
                         Document zm_item_answer_doc = Jsoup.parse(zm_item_answer.toString());
-                        Elements herf = zm_item_answer_doc.select("link");
-                        Log.e("J",herf.attr("herf"));
+                        Elements zm_item_rich_text = zm_item_answer_doc.select("div.zm-item-rich-text");
+                        Log.e("J",zm_item_rich_text.attr("data-entry-url"));
+
                         Elements summary_wrapper = zm_item_answer_doc.select("span.summary-wrapper");
                         Document summary_wrapper_doc = Jsoup.parse(summary_wrapper.toString());
                         Elements author = zm_item_answer_doc.select("span.author-link-line");
@@ -95,6 +96,30 @@ public class JsoupBasicActivity extends AppCompatActivity{
 
 
                     }
+                }
+                catch (Exception e){e.printStackTrace();}
+            }
+        }).start();
+    }
+
+    @OnClick(R.id.btn_get_as) void toAS()
+    {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Document doc = Jsoup.connect("http://www.zhihu.com/question/60347845/answer/197711222").get();
+                    Element root = doc.getElementById("root");
+                    Document root_doc = Jsoup.parse(root.toString());
+                    Elements question_container = root_doc.select("div.AnswerItem-content");
+                    Log.e("J",question_container.toString());
+                    Document question_container_doc = Jsoup.parse(question_container.toString());
+                    Elements content = question_container_doc.select("div.RichText");
+                    Log.e("J",content.text());
+
+
+
+
                 }
                 catch (Exception e){e.printStackTrace();}
             }
