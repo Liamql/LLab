@@ -67,6 +67,7 @@ public class JsoupBasicActivity extends AppCompatActivity{
             public void run() {
                 try {
                     Document doc = Jsoup.connect("http://www.zhihu.com/collection/31241928").get();
+                    //Log.e("Jsoup",doc.toString());
                     Elements list_title_container = doc.select("div.zg-section-title");
                     Document TitleDoc = Jsoup.parse(list_title_container.toString());
                     Elements collectionTitle = TitleDoc.select("h2");
