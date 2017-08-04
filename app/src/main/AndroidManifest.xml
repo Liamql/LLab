@@ -37,6 +37,7 @@
         <activity android:name=".Network.Retrofit2BasicActivity"></activity>
         <activity android:name=".Dagger2.DaggerActivity"></activity>
         <activity android:name=".Network.JsoupBasicActivity"></activity>
+        <activity android:name=".database.DBActivity"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>

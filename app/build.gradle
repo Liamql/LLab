@@ -50,4 +50,7 @@ dependencies {
 
     //Jsoup
     compile 'org.jsoup:jsoup:1.9.2'
+
+    //diskLRUcache
+    compile 'com.jakewharton:disklrucache:2.0.2'
 }
