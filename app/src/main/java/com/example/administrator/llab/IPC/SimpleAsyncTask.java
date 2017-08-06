@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.administrator.llab.R;
 
 import java.io.ByteArrayOutputStream;
@@ -34,7 +35,7 @@ public class SimpleAsyncTask extends Activity {
 
     void downloadImage()
     {
-
+        //Glide.with(this).load(url).
     }
 
     private class MyAsyncTask extends AsyncTask
