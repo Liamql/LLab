@@ -23,6 +23,7 @@ import com.example.administrator.llab.Thread.ThreadPoolActivity;
 import com.example.administrator.llab.annotation.anno_RT;
 import com.example.administrator.llab.broadcast.BasicBroadcastActivity;
 import com.example.administrator.llab.database.DBActivity;
+import com.example.administrator.llab.proxy.DyProxyInterfaceActivity;
 import com.example.administrator.llab.reflection.ref_base;
 import com.example.administrator.llab.service.AIDLSimpleActivity;
 import com.example.administrator.llab.service.ServiceBasicActivity;
@@ -163,6 +164,12 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.ll_disk_cache) void toDC()
     {
         Intent intent = new Intent(getContext(), DBActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_proxy_inter) void toPr()
+    {
+        Intent intent = new Intent(getContext(), DyProxyInterfaceActivity.class);
         startActivity(intent);
     }
 
