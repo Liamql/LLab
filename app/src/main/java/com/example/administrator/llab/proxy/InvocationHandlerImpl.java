@@ -20,9 +20,9 @@ public class InvocationHandlerImpl implements InvocationHandler {
     @Override
     public Object invoke(Object paramObject, Method paramMethod,
                          Object[] paramArrayOfObject) throws Throwable {
-        Log.e("InvocationHandlerImpl","You are going to invoke " + paramMethod.getName() + " ...");
-        paramMethod.invoke(car, null);
-        Log.e("InvocationHandlerImpl",paramMethod.getName() + " invocation Has Been finished...");
+        //Log.e("InvocationHandlerImpl","You are going to invoke " + paramMethod.getName() + " ...");
+        //paramMethod.invoke(car, null);
+        //Log.e("InvocationHandlerImpl",paramMethod.getName() + " invocation Has Been finished...");
         return null;
     }
 

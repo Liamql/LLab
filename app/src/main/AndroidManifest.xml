@@ -39,6 +39,7 @@
         <activity android:name=".Network.JsoupBasicActivity"></activity>
         <activity android:name=".database.DBActivity"></activity>
         <activity android:name=".proxy.DyProxyInterfaceActivity"></activity>
+        <activity android:name=".RichText.BasicRichTextActivity"></activity>
 
         <service android:name=".service.SimpleService"></service>
         <service android:name=".service.MyIntentService"></service>

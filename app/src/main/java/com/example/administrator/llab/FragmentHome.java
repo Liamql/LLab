@@ -18,6 +18,7 @@ import com.example.administrator.llab.Network.OkHttp3BasicActivity;
 import com.example.administrator.llab.Network.Retrofit2BasicActivity;
 import com.example.administrator.llab.Network.SimpleHttpActivity;
 import com.example.administrator.llab.R;
+import com.example.administrator.llab.RichText.BasicRichTextActivity;
 import com.example.administrator.llab.Thread.ThreadActitvity;
 import com.example.administrator.llab.Thread.ThreadPoolActivity;
 import com.example.administrator.llab.annotation.anno_RT;
@@ -170,6 +171,12 @@ public class FragmentHome extends Fragment {
     @OnClick(R.id.tv_proxy_inter) void toPr()
     {
         Intent intent = new Intent(getContext(), DyProxyInterfaceActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.tv_rich_tv) void toRT()
+    {
+        Intent intent = new Intent(getContext(), BasicRichTextActivity.class);
         startActivity(intent);
     }
 

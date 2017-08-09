@@ -897,6 +897,14 @@
                             android:layout_weight="1"
                             android:background="@color/orange"
                             android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_rich_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="RichText"
+                                android:textColor="@color/white"/>
+
                         </LinearLayout>
 
                         <LinearLayout
