@@ -17,6 +17,9 @@ Service启动 远程Service AIDL
 * IPC
 * 组件
 * 缓存
+
+DiskLRUcache LRUcache
+
 * 自定义View
 * 网络操作
 * 图片
