@@ -15,6 +15,9 @@ Reflection
 Service启动 远程Service AIDL
 
 * IPC
+
+Handler Messenger
+
 * 组件
 * 缓存
 
@@ -22,6 +25,9 @@ DiskLRUcache LRUcache
 
 * 自定义View
 * 网络操作
+
+HttpURLconnection okhttp3 retrofit2
+
 * 图片
 * 动画
 * RecyclerView
