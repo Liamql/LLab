@@ -29,6 +29,9 @@ DiskLRUcache LRUcache
 HttpURLconnection okhttp3 retrofit2
 
 * 图片
+
+Glide
+
 * 动画
 * RecyclerView
 * 工具类
