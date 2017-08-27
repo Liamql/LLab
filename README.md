@@ -19,6 +19,9 @@ Service启动 远程Service AIDL
 Handler Messenger
 
 * 组件
+
+ Boardcast
+
 * 缓存
 
 DiskLRUcache LRUcache
