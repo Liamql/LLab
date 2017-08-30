@@ -20,7 +20,7 @@ Handler Messenger
 
 * 组件
 
- Boardcast ContentProvider
+ Boardcast ContentProvider fragment
 
 * 缓存
 
