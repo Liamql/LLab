@@ -20,7 +20,7 @@ Handler Messenger
 
 * 组件
 
- Boardcast ContentProvider fragment
+ Boardcast ContentProvider Fragment
 
 * 缓存
 
@@ -33,7 +33,7 @@ HttpURLconnection okhttp3 retrofit2
 
 * 图片
 
-Glide
+Glide ImageLoader
 
 * 动画
 * RecyclerView
