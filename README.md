@@ -16,11 +16,11 @@ Service启动 远程Service AIDL
 
 * IPC
 
-Handler Messenger
+Handler Messenger 
 
 * 组件
 
- Boardcast ContentProvider Fragment
+ Boardcast ContentProvider Fragment Activity
 
 * 缓存
 
@@ -33,7 +33,7 @@ HttpURLconnection okhttp3 retrofit2
 
 * 图片
 
-Glide ImageLoader
+Glide ImageLoader 
 
 * 动画
 * RecyclerView
