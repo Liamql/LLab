@@ -36,5 +36,8 @@ HttpURLconnection okhttp3 retrofit2
 Glide ImageLoader 
 
 * 动画
+
+Animation
+
 * RecyclerView
 * 工具类
