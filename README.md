@@ -37,7 +37,7 @@ Glide ImageLoader
 
 * 动画
 
-Animation
+Animation Transition
 
 * RecyclerView
 * 工具类
