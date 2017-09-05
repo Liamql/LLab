@@ -6,7 +6,7 @@
 * 线程、注解、反射
 
 多线程
-TheadPool
+MutipleTheadPool
 Annotation
 Reflection
 
